@@ -11,7 +11,7 @@ class IndeedukSpider(scrapy.Spider):
     
     #start_urls = ['https://www.indeed.co.uk/information-technology-jobs']
     #start_urls = ['https://www.indeed.co.uk/jobs?q=information+technology&fromage=last']
-    start_urls = ['https://www.indeed.co.uk/jobs?q=information+technology&sort=date']
+    start_urls = ['https://www.indeed.co.uk/jobs?q=information+technology&fromage=1&sort=date']
 
     custom_settings = {
         'LOG_FILE': 'log/' + date.strftime('%Y') + '-' + date.strftime('%m') + '-' + date.strftime('%d') + '-' + date.strftime('%H') + '-' + date.strftime('%M') + '-' + date.strftime('%S') + '-' + 'IndeedUk.txt',

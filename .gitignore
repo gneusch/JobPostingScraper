@@ -1,3 +1,5 @@
+startScraping.log
+
 #scraped data
 *.json
 *.jl

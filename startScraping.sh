@@ -12,7 +12,7 @@ while ! [ -s $FILE ]; do
 
 	STIME=`date +%T` 
 	echo "Scraping started for $DATE $STIME... filename: $FILE"
-	scrapy crawl IndeedUk -o "$DATADIR$FILENAME"
+	(cd $SCRIPTDIR ; scrapy crawl IndeedUk -o "$DATADIR$FILENAME")
 
 	if ! [ -s $FILE ]; then
 		echo "File $FILE doesn't exist or empty, will retry in 5m..."
